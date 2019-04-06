@@ -28,8 +28,8 @@
         <div class="subheading">
           <label for="subheading" id="subheading">Explore, Imagine and Create</label>
           <div class="buttonssign">
-            <button type="button" name="signin" class="headerButton">Sign in</button>
-            <button type="button" name="signup" class="headerButton">Sign up</button>
+            <button type="button" name="signin" class="headerButton" id="signin" onclick="createModal('myModal','signin')">Sign in</button>
+            <button type="button" name="signup" class="headerButton" id="signup" onclick="createModal('myModal1','signup')">Sign up</button>
           </div>
         </div>
 
@@ -41,15 +41,73 @@
     </div>
 
     <div>
-
     	<!-- Insert code for Sign In modal here -->
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+         <!-- Modal content -->
+         <div class="modal-content">
+           <span class="close">&times;</span>
+           <div class="modeltitle">
+             <h2>Welcome Back!</h2>
+             <hr>
+           </div>
+           <div class="">
+             <form class="" action="index.html" method="post">
+               <label for="fullname">Username</label>
+               <br>
+               <input type="text" name="username" value="" placeholder="Enter Username" required>
+
+               <label for="password">Password</label>
+               <br>
+               <input type="password" name="password" value="" placeholder="Enter Password" required>
+               
+               <button type="submit" name="submit" class="btnsubmit">Sign Up</button>
+             </form>
+           </div>
+
+         </div>
+
+        </div>
 
     </div>
 
     <div>
 
     	<!-- Insert code for Sign Up modal here -->
+      <!-- The Modal -->
+      <div id="myModal1" class="modal">
 
+       <!-- Modal content -->
+       <div class="modal-content">
+         <span class="close">&times;</span>
+         <div class="modeltitle">
+           <h2>Get Started</h2>
+           <hr>
+         </div>
+         <div class="">
+           <form class="" action="index.html" method="post">
+             <label for="fullname">Full Name</label>
+             <br>
+             <input type="text" name="fullname" value="" placeholder="Enter Full Name" required>
+
+             <label for="fullname">User Name</label>
+             <br>
+             <input type="text" name="username" value="" placeholder="Enter User Name" required>
+
+             <label for="password">Password</label>
+             <br>
+             <input type="password" name="password" value="" placeholder="Enter Password" required>
+
+             <label for="password">Confirm Password</label>
+             <br>
+             <input type="password" name="password" value="" placeholder="Confirm Password" required>
+             <button type="submit" name="submit" class="btnsubmit">Sign Up</button>
+           </form>
+         </div>
+
+       </div>
+     </div>
     </div>
 
     <div>
