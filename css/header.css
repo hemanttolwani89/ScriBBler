@@ -1,0 +1,13 @@
+/* Set a style for all elements inside the header i.e. Sign Up button, Sign In button,
+the title "ScriBBler" & the sub-heading below "ScriBBLer" */
+#heading{
+font-family: Satisfy;
+color: blue;
+font-size: 30px;
+}
+
+#subheading{
+font-family: Satisfy;
+color: black  ;
+font-size: 15px;
+}
