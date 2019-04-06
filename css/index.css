@@ -4,6 +4,7 @@ body{
    background-attachment: fixed;
    background-position: center center;
    background-size: cover;
+   -webkit-background-size: cover;
    margin: 0 !important;
    background-size: 100% cover!important;
    overflow:hidden;
@@ -11,3 +12,24 @@ body{
 }
 
 /* Set a style for the rest of the elements besides the header elements on the index.html page */
+#subheading{
+font-family: Satisfy;
+color: black  ;
+font-size: 15px;
+}
+
+.headerButton {
+  background-color: blue;
+  border: none;
+  color: white;
+  position: relative;
+  padding: 8px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+.buttonssign{
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
