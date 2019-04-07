@@ -14,10 +14,21 @@
     font-size: 30px;
 }
 .blogContent{
-
+  margin: 3em;
+  text-align: justify;
 }
 
 /* Set a style for all the remaining elements like Like button, Edit button, Comment button and so on. */
+.blogContent button{
+    background-color: pink;
+}
+
+#editbtn{
+  position: fixed;
+  width: 90px;
+  height: 30px;
+  right: 3em;
+}
 
 #subheading{
 font-family: Satisfy;
