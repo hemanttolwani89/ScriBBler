@@ -1,18 +1,29 @@
 <!DOCTYPE html>
 <head>
-        
+
         <link href='..\css\post.css' rel='stylesheet' type='text/css'>
         <link href='..\css\header.css' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="..\font-awesome-4.7.0/css/font-awesome.min.css">
         <link href='..\css\font.css' rel='stylesheet' type='text/css'>
-    <style>        
-    </style>     
+    <style>
+    </style>
 </head>
 <body>
-        <div class="header">
-             <!-- Insert code for Sign Up, Sign In button here. 
-               Add code for "ScriBBler" heading and the sub-heading -->
-        </div>
+  <div class="header">
+
+    <!-- Insert code for Sign Up, Sign In button here. Add code for "ScriBBler" heading and the sub-heading -->
+    <label for="heading" id="heading">ScriBBler</label>
+
+  </div>
+
+  <div class="subheading">
+    <label for="subheading" id="subheading">Explore, Imagine and Create</label>
+    <div class="buttonssign">
+      <button type="button" name="signin" class="headerButton" id="signin" onclick="createModal('signinModal','signin')">Sign in</button>
+      <button type="button" name="signup" class="headerButton" id="signup" onclick="createModal('myModal1','signup')">Sign up</button>
+    </div>
+  </div>
+
 
     <div class="blogContent">
         <div id="blogTitle" class="blogTite">
@@ -28,14 +39,83 @@
 
 <div class="blogText">
     <p id="blogBody">
-            Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician had ever ventured before. His boundless drive, technical ability and creative application of such effects as distortion forever transformed the sound of rock and roll. While creating his unique musical voice and guitar style, Hendrix synthesized diverse genres, including blues, R&B, soul, British rock, American folk music, 1950s rock and roll, psychedelic and jazz. Hendrix favored overdriven amplifiers with high volume and gain.[119] He was instrumental in developing the previously undesirable technique of guitar amplifier feedback, and helped to popularize use of the wah-wah pedal in mainstream rock.[348] He rejected the standard barre chord fretting technique used by most guitarists in favor of fretting the low 6th string root notes with his thumb.[349] He applied this technique during the beginning bars of "Little Wing", which allowed him to sustain the root note of chords while also playing melody. This method has been described as piano style, with the thumb playing what a pianist's left hand would play and the other fingers playing melody as a right hand.[350] Having spent several years fronting a trio, he developed an ability to play rhythm chords and lead lines together, giving the audio impression that more than one guitarist was performing.[351][nb 41] He was the first artist to incorporate stereophonic phasing effects in rock music recordings.[354] Holly George-Warren of Rolling Stone commented: "Hendrix pioneered the use of the instrument as an electronic sound source. Players before him had experimented with feedback and distortion, but Hendrix turned those effects and others into a controlled, fluid vocabulary every bit as personal as the blues with which he began."[3][nb 42] Aledort wrote: "In rock guitar, there are but two eras — before Hendrix and after Hendrix."
+            Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician had ever ventured before. His boundless drive, technical ability and creative application of such effects as distortion forever transformed the sound of rock and roll. While creating his unique musical voice and guitar style, Hendrix synthesized diverse genres, including blues, R&B, soul, British rock, American folk music, 1950s rock and roll, psychedelic and jazz. Hendrix favored overdriven amplifiers with high volume and gain.[119] He was instrumental in developing the previously undesirable technique of guitar amplifier feedback, and helped to popularize use of the wah-wah pedal in mainstream rock.[348] He rejected the standard barre chord fretting technique used by most guitarists in favor of fretting the low 6th string root notes with his thumb.[349] He applied this technique during the beginning bars of "Little Wing", which allowed him to sustain the root note of chords while also playing melody. This method has been described as piano style, with the thumb playing what a pianist's left hand would play and the other fingers playing melody as a right hand.[350] Having spent several years fronting a trio, he developed an ability to play rhythm chords and lead lines together, giving the audio impression that more than one guitarist was performing.[351][nb 41] He was the first artist to incorporate stereophonic phasing effects in rock music recordings.[354] Holly George-Warren of Rolling Stone commented: "Hendrix pioneered the use of the instrument as an electronic sound source. Players before him had experimented with feedback and distortion, but Hendrix turned those effects and others into a controlled, fluid vocabulary every bit as personal as the blues with which he began."[3][nb 42] Aledort wrote: "In rock guitar, there are but two eras ï¿½ before Hendrix and after Hendrix."
     </p>
 </div>
 
     <!-- Insert code for Like button, Comment button, Comment box here-->
 
+
+
+    <div>
+      <!-- Insert code for Sign In modal here -->
+
+        <div id="signinModal" class="modal">
+         <div class="modal-content">
+           <span class="close">&times;</span>
+           <div class="modeltitle">
+             <h2>Welcome Back!</h2>
+             <hr>
+           </div>
+           <div class="">
+             <form class="" action="index.html" method="post">
+               <label for="fullname">Username</label>
+               <br>
+               <input type="text" name="username" value="" placeholder="Enter Username" required>
+
+               <label for="password">Password</label>
+               <br>
+               <input type="password" name="password" value="" placeholder="Enter Password" required>
+
+               <button type="submit" name="submit" class="btnsubmit">Sign In</button>
+             </form>
+             <div class="nam">
+               Not a member? <a  href="#myModal1" data-toggle="modal" >Sign Up</a>
+             </div>
+           </div>
+         </div>
+        </div>
+      </div>
+
+    <div>
+
+      <!-- Insert code for Sign Up modal here -->
+      <!-- The Modal -->
+      <div id="myModal1" class="modal">
+
+       <!-- Modal content -->
+       <div class="modal-content">
+         <span class="close">&times;</span>
+         <div class="modeltitle">
+           <h2>Get Started</h2>
+           <hr>
+         </div>
+         <div class="">
+           <form class="" action="index.html" method="post">
+             <label for="fullname">Full Name</label>
+             <br>
+             <input type="text" name="fullname" value="" placeholder="Enter Full Name" required>
+
+             <label for="fullname">User Name</label>
+             <br>
+             <input type="text" name="username" value="" placeholder="Enter User Name" required>
+
+             <label for="password">Password</label>
+             <br>
+             <input type="password" name="password" value="" placeholder="Enter Password" required>
+
+             <label for="password">Confirm Password</label>
+             <br>
+             <input type="password" name="password" value="" placeholder="Confirm Password" required>
+             <button type="submit" name="submit" class="btnsubmit">Sign Up</button>
+           </form>
+         </div>
+
+       </div>
+     </div>
+    </div>
     <script src="..\js\post.js" defer></script>
-    <script src="..\js\header.js">             
+    <script src="..\js\header.js">
     </script>
-    
+
 </body>
