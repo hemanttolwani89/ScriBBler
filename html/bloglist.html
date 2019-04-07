@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <link href='..\css\bloglist.css' rel='stylesheet' type='text/css'>    
+    <link href='..\css\bloglist.css' rel='stylesheet' type='text/css'>
     <link href='..\css\header.css' rel='stylesheet' type='text/css'>
     <link href='..\css\font.css' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="..\font-awesome-4.7.0/css/font-awesome.min.css">
@@ -11,12 +11,20 @@
 </head>
 <body>
     <div id="main-container-div">
-        <div class="header">
-                                
-            <!-- Insert code for Sign Up, Sign In button here. 
-                 Add code for "ScriBBler" heading and the sub-heading -->
+      <div class="header">
 
+        <!-- Insert code for Sign Up, Sign In button here. Add code for "ScriBBler" heading and the sub-heading -->
+        <label for="heading" id="heading">ScriBBler</label>
+
+      </div>
+
+      <div class="subheading">
+        <label for="subheading" id="subheading">Explore, Imagine and Create</label>
+        <div class="buttonssign">
+          <button type="button" name="signin" class="headerButton" id="signin" onclick="createModal('signinModal','signin')">Sign in</button>
+          <button type="button" name="signup" class="headerButton" id="signup" onclick="createModal('myModal1','signup')">Sign up</button>
         </div>
+      </div>
     </div>
     <div>
 
@@ -25,9 +33,65 @@
     </div>
 
     <div>
+      <div id="signinModal" class="modal">
+       <div class="modal-content">
+         <span class="close">&times;</span>
+         <div class="modeltitle">
+           <h2>Welcome Back!</h2>
+           <hr>
+         </div>
+         <div class="">
+           <form class="" action="index.html" method="post">
+             <label for="fullname">Username</label>
+             <br>
+             <input type="text" name="username" value="" placeholder="Enter Username" required>
 
+             <label for="password">Password</label>
+             <br>
+             <input type="password" name="password" value="" placeholder="Enter Password" required>
+
+             <button type="submit" name="submit" class="btnsubmit">Sign In</button>
+           </form>
+           <div class="nam">
+             Not a member? <a  href="#myModal1" data-toggle="modal" >Sign Up</a>
+           </div>
+         </div>
+       </div>
+      </div>
         <!-- Insert code for Sign Up modal here -->
+        <!-- The Modal -->
+        <div id="myModal1" class="modal">
 
+         <!-- Modal content -->
+         <div class="modal-content">
+           <span class="close">&times;</span>
+           <div class="modeltitle">
+             <h2>Get Started</h2>
+             <hr>
+           </div>
+           <div class="">
+             <form class="" action="index.html" method="post">
+               <label for="fullname">Full Name</label>
+               <br>
+               <input type="text" name="fullname" value="" placeholder="Enter Full Name" required>
+
+               <label for="fullname">User Name</label>
+               <br>
+               <input type="text" name="username" value="" placeholder="Enter User Name" required>
+
+               <label for="password">Password</label>
+               <br>
+               <input type="password" name="password" value="" placeholder="Enter Password" required>
+
+               <label for="password">Confirm Password</label>
+               <br>
+               <input type="password" name="password" value="" placeholder="Confirm Password" required>
+               <button type="submit" name="submit" class="btnsubmit">Sign Up</button>
+             </form>
+           </div>
+
+         </div>
+        </div>
     </div>
 
     <div class="allPostsContainer">
@@ -58,7 +122,7 @@
                 <p class="post-title">Hello there ! This is Post 2. </p>
                 <p class="post-desc">Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician had ever ventured before. His boundless drive, technical ability and creative application of such effects as distortion forever transformed the sound of rock and roll. While creating his unique musical voice and guitar style, Hendrix synthesized diverse genres, including blues, R&B, soul, British rock, American folk music, 1950s rock and roll, psychedelic and jazz.</p>
 
-            
+
             <!-- Insert code for ... icon here -->
         </div>
     </div>
@@ -104,18 +168,18 @@
 
                     <p class="post-title">Hello there ! This is Post 5. </p>
                     <p class="post-desc">Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician had ever ventured before. His boundless drive, technical ability and creative application of such effects as distortion forever transformed the sound of rock and roll. While creating his unique musical voice and guitar style, Hendrix synthesized diverse genres, including blues, R&B, soul, British rock, American folk music, 1950s rock and roll, psychedelic and jazz.</p>
-                
+
                 <!-- Insert code for ... icon here -->
-            
+
             </div>
         </div>
 
         <div>
 
             <!-- Insert code for delete modal here -->
-            
+
         </div>
-        
+
 </div>
     <script src="..\js\bloglist.js">  </script>
     <script src="..\js\header.js"> </script>
