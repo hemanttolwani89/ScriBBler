@@ -28,7 +28,7 @@
         <div class="subheading">
           <label for="subheading" id="subheading">Explore, Imagine and Create</label>
           <div class="buttonssign">
-            <button type="button" name="signin" class="headerButton" id="signin" onclick="createModal('myModal','signin')">Sign in</button>
+            <button type="button" name="signin" class="headerButton" id="signin" onclick="createModal('signinModal','signin')">Sign in</button>
             <button type="button" name="signup" class="headerButton" id="signup" onclick="createModal('myModal1','signup')">Sign up</button>
           </div>
         </div>
@@ -36,15 +36,15 @@
         <div class="postButtons">
 
         	<!-- Insert code for All Posts & Create Post button here -->
-          <button type="button" name="allpost" class="postButton" id="all" onclick="createModal('myModal','signin')">All Posts</button>
-          <button type="button" name="createpost" class="postButton" id="create" onclick="createModal('myModal1','signup')">Create Post</button>
+          <button type="button" name="allpost" class="postButton">All Posts</button>
+          <button type="button" name="createpost" class="postButton" id="create" onclick="createModal('postModal','create')">Create Post</button>
         </div>
     </div>
 
     <div>
     	<!-- Insert code for Sign In modal here -->
 
-        <div id="myModal" class="modal">
+        <div id="signinModal" class="modal">
          <div class="modal-content">
            <span class="close">&times;</span>
            <div class="modeltitle">
@@ -112,13 +112,40 @@
     <div>
 
     	<!-- Insert code for Create Post modal here -->
+      <!-- The Modal -->
+      <div id="postModal" class="modal">
 
+       <!-- Modal content -->
+       <div class="modal-content">
+         <span class="close">&times;</span>
+         <div class="modeltitle">
+           <h2>Pen Your Post</h2>
+           <hr>
+         </div>
+         <div class="">
+           <form class="" action="index.html" method="post">
+             <label for="title">Title</label>
+             <br>
+             <input type="text" name="title" value=""  class="title" required>
+             <br>
+
+             <label for="content">Content</label>
+             <br>
+             <textarea name="content" rows="8" cols="80"></textarea>
+
+             <button type="submit" name="submit" class="btnsubmit">Create</button>
+           </form>
+         </div>
+
+       </div>
+      </div>
+      </div>
     </div>
 
 	<!-- Place all Javascript for header in this file -->
 	<script src="js\header.js"></script>
 	<!-- Place all Javascript for rest of the elements in this file -->
-    <script src="js\index.js"></script>
+  <script src="js\index.js"></script>
 
 </body>
 </html>

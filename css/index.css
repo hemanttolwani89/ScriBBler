@@ -94,12 +94,17 @@ label{
  font-family: "Georgia";
 }
 
+textarea{
+  width: 100%;
+}
 input{
   width: 100%;
   height: 30px;
   margin-bottom: 10px;
 }
-
+.title{
+  width: 50%;
+}
 .modeltitle{
   text-align: center;
 }
