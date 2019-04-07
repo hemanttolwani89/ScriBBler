@@ -36,16 +36,15 @@
         <div class="postButtons">
 
         	<!-- Insert code for All Posts & Create Post button here -->
-
+          <button type="button" name="allpost" class="postButton" id="all" onclick="createModal('myModal','signin')">All Posts</button>
+          <button type="button" name="createpost" class="postButton" id="create" onclick="createModal('myModal1','signup')">Create Post</button>
         </div>
     </div>
 
     <div>
     	<!-- Insert code for Sign In modal here -->
-        <!-- The Modal -->
-        <div id="myModal" class="modal">
 
-         <!-- Modal content -->
+        <div id="myModal" class="modal">
          <div class="modal-content">
            <span class="close">&times;</span>
            <div class="modeltitle">
@@ -61,15 +60,15 @@
                <label for="password">Password</label>
                <br>
                <input type="password" name="password" value="" placeholder="Enter Password" required>
-               
+
                <button type="submit" name="submit" class="btnsubmit">Sign Up</button>
              </form>
+             <div class="nam">
+               Not a member? <a  href="#myModal1" data-toggle="modal" >Sign Up</a>
+             </div>
            </div>
-
          </div>
-
         </div>
-
     </div>
 
     <div>
@@ -123,3 +122,4 @@
 
 </body>
 </html>
+<!-- TODO: close modal and width modal close modal and open other-->

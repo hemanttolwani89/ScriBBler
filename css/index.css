@@ -34,6 +34,26 @@ font-size: 15px;
   right: 10px;
 }
 
+.postButton {
+  background-color: #FFD700;
+  border: none;
+  color: black;
+  position: relative;
+  padding: 8px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+.postButtons{
+  left: 0;
+    line-height: 200px;
+    margin-top: -100px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+}
+
 .modal {
   display: none; /* Hidden by default */
   position: absolute; /* Stay in place */
@@ -88,4 +108,7 @@ input{
   height: 30px;
   color: white;
   background-color: green;
+}
+.nam{
+  text-align: center;
 }
