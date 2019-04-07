@@ -24,3 +24,19 @@ function createModal(myModel, myBtn){
     }
   }
 }
+
+function setEditableTrue(editbtn){
+  var content = document.getElementById("blogBody");
+  var savebtn = document.getElementById("savebtn");
+  content.contentEditable = true;
+  editbtn.style.display = 'none';
+  savebtn.style.display = 'block';
+}
+
+function setEditableFalse(savebtn){
+  var content = document.getElementById("blogBody");
+  var editbtn = document.getElementById("editbtn");
+  content.contentEditable = false;
+  savebtn.style.display = 'none';
+  editbtn.style.display = 'block';
+}

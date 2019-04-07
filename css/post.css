@@ -6,7 +6,6 @@
 }
 .blogText {
      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
 }
 .blogAuthor {
     padding: 0px 0px 0px 10px;
@@ -21,13 +20,18 @@
 /* Set a style for all the remaining elements like Like button, Edit button, Comment button and so on. */
 .blogContent button{
     background-color: pink;
+    position: fixed;
+    width: 90px;
+    height: 30px;
+    right: 3em;
 }
 
-#editbtn{
-  position: fixed;
-  width: 90px;
-  height: 30px;
-  right: 3em;
+.blogBody{
+    
+}
+
+#savebtn{
+  display: none;
 }
 
 #subheading{
