@@ -145,8 +145,25 @@ input{
   color: white;
   background-color: green;
 }
-span.myTrash{
+.myTrash{
   position: absolute;
   top: 10px;
   right: 10px;
+}
+.btntrash{
+  visibility: hidden;
+}
+
+.yesbtn{
+  background-color: red;
+  color: white;
+  width: 100px;
+  height: 45px;
+}
+
+.nobtn{
+  background-color: green;
+  color: white;
+  width: 100px;
+  height: 45px;
 }
