@@ -27,6 +27,10 @@
         border-radius: 0 15px 15px 0;
         padding: 0 20px;
 }
+.p{
+  height:3.6em;
+  overflow:hidden;
+}
 .post-title{
     font-family: 'Itim', cursive;
     font-weight: bold;
@@ -44,8 +48,10 @@
     font-size: 30px;
 }
 .post-desc{
-    height: 100px;
+    height: 80px;
     margin-bottom: 0 !important;
+    line-height:20px;
+    overflow:hidden;
 }
 
 body {
@@ -171,4 +177,8 @@ input{
 
 #lastpost{
   align-self: center;
+}
+
+.post-more a{
+      text-decoration: none;
 }
