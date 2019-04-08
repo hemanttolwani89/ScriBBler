@@ -62,6 +62,8 @@ function comment() {
     div.setAttribute('class', 'comment');
     div.style.display = 'inline-block';
     div.appendChild(text);
-    classComment.appendChild(div);
+    var a = document.getElementsByClassName("comment");
+    classComment.insertBefore(div, a[0]);
+    //classComment.appendChild(div);
   }
 }
