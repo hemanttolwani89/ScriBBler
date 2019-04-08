@@ -18,16 +18,43 @@
 }
 
 /* Set a style for all the remaining elements like Like button, Edit button, Comment button and so on. */
-.blogContent button{
+.blogAuthor button{
     background-color: pink;
-    position: fixed;
+    position: absolute;
     width: 90px;
     height: 30px;
     right: 3em;
 }
+#commentbtn{
+  background-color: pink;
+  position: absolute;
+  width: 90px;
+  height: 30px;
+}
+.underpost{
+  position: absolute;
+  left: 3em;
+}
 
-.blogBody{
-    
+#like {
+  left: 3em;
+}
+
+#liked {
+  display: none;
+  left: 3em;
+}
+#liked button{
+  background-color: pink;
+  width: 90px;
+  height: 30px;
+  left: 3em;
+}
+#like button {
+  background-color: pink;
+  width: 90px;
+  height: 30px;
+  left: 3em;
 }
 
 #savebtn{
@@ -112,6 +139,24 @@ input{
   color: white;
   background-color: green;
 }
-.nam{
+.nam {
   text-align: center;
+}
+
+.allcomment {
+  position: absolute;
+  display: inline-block;
+  background-color: grey;
+  min-height: 10px;
+  width: 100%;
+}
+
+.comment {
+  position: relative;
+  display: none;
+  background-color: white;
+  margin: 10px;
+  color: black;
+  min-height: 40px;
+  width: 96%;
 }
