@@ -5,8 +5,11 @@ function createModal(myModel, myBtn){
   var btn = document.getElementById(myBtn);
 
   // Get the <span> element that closes the modal
-  var span = document.getElementsByClassName("close")[0];
-
+  if(modal.id == "signinModal") {
+    var span = document.getElementsByClassName("close")[0];
+  } else {
+    var span = document.getElementsByClassName("close")[1];
+  }
   // When the user clicks on the button, open the modal
   btn.onclick = function() {
     modal.style.display = "block";
@@ -65,5 +68,21 @@ function comment() {
     var a = document.getElementsByClassName("comment");
     classComment.insertBefore(div, a[0]);
     //classComment.appendChild(div);
+  }
+}
+
+function closeModal() {
+  var signinmodal = document.getElementById("signinModal");
+  var myModal = document.getElementById("myModal1");
+  signinmodal.style.display = 'none';
+  myModal.style.display = 'block';
+  var span = document.getElementById("closeMyModal1");
+  window.onclick = function(event) {
+    if (event.target == myModal) {
+      myModal.style.display = "none";
+    }
+  }
+  span.onclick = function() {
+    myModal.style.display = "none";
   }
 }
